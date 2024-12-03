@@ -13,7 +13,7 @@ export function Nav({ session }: { session?: Session | null }) {
                 )}
             </p>
             <Link
-                href={session ? "/api/auth/signout" : "/api/auth/signin"}
+                href={session ? "/api/identity/signout" : "/api/identity/signin"}
                 className="ml-4 rounded border border-solid border-white/30 bg-white/15 px-5 py-1 font-semibold no-underline drop-shadow-md transition hover:bg-emerald-500 focus:outline-none focus:ring focus:ring-emerald-500"
             >
                 {session ? "Sign out" : "Sign in"}

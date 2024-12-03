@@ -34,6 +34,9 @@ export default function RootLayout({
             lang="en"
             className={`${montserrat.variable} ${hind.variable} text-white`}
         >
+            <head>
+                <meta name="theme-color" content="#138a72" />
+            </head>
             <body>
                 <TRPCReactProvider>{children}</TRPCReactProvider>
             </body>

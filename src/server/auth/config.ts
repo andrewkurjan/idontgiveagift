@@ -19,8 +19,8 @@ export const authConfig = {
         DiscordProvider,
         GitHub,
         SendGrid({
-            from: "no-reply@idontgiveagift.com"
-        })
+            from: "no-reply@idontgiveagift.com",
+        }),
     ],
     adapter: PrismaAdapter(db),
     callbacks: {
@@ -32,4 +32,5 @@ export const authConfig = {
             },
         }),
     },
+    basePath: "/api/identity",
 } satisfies NextAuthConfig;
