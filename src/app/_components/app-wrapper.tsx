@@ -31,7 +31,7 @@ export default function AppWrapper({ session }: { session: Session | null }) {
     if (isLoading)
         return (
             <main
-                className="bg-lightGrey flex min-h-screen animate-rotateGradient flex-col items-center justify-center"
+                className="bg-lightGrey flex h-svh animate-rotateGradient flex-col items-center justify-center"
                 style={{
                     backgroundImage:
                         "linear-gradient(45deg, #F4D03F 0%, #16A085 50%, #173f2c 100%)",
@@ -43,7 +43,7 @@ export default function AppWrapper({ session }: { session: Session | null }) {
     return (
         <>
             <main
-                className="bg-lightGrey flex min-h-screen animate-rotateGradient flex-col items-center justify-center"
+                className="bg-lightGrey flex h-svh animate-rotateGradient flex-col items-center justify-center"
                 style={{
                     backgroundImage:
                         "linear-gradient(45deg, #F4D03F 0%, #16A085 50%, #173f2c 100%)",
