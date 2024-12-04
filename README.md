@@ -1,5 +1,9 @@
 # I Don't Give a Gift 🎁 💩
 
+## YouTube Video
+
+https://youtu.be/N0Y2tYYG7G8
+
 ## Overview
 
 "I Don't Give a Gift" is a web application designed to help users organize gift exchanges. Users can create lists of participants, assign gift recipients, and send email notifications to participants. The app ensures that each participant is assigned a recipient in a fair and random manner.
