@@ -31,11 +31,10 @@ export default function AppWrapper({ session }: { session: Session | null }) {
     if (isLoading)
         return (
             <main
-                className="bg-lightGrey flex h-svh animate-rotateGradient flex-col items-center justify-center"
+                className="bg-lightGrey flex h-svh flex-col items-center justify-center"
                 style={{
                     backgroundImage:
-                        "linear-gradient(45deg, #F4D03F 0%, #16A085 50%, #173f2c 100%)",
-                    backgroundSize: "200% 200%",
+                        "linear-gradient(45deg, #F4D03F 0%, #16A085 50%, #173f2c 100%)"
                 }}
             ></main>
         );
@@ -43,11 +42,10 @@ export default function AppWrapper({ session }: { session: Session | null }) {
     return (
         <>
             <main
-                className="bg-lightGrey flex h-svh animate-rotateGradient flex-col items-center justify-center"
+                className="bg-lightGrey flex h-svh flex-col items-center justify-center"
                 style={{
                     backgroundImage:
-                        "linear-gradient(45deg, #F4D03F 0%, #16A085 50%, #173f2c 100%)",
-                    backgroundSize: "200% 200%",
+                        "linear-gradient(45deg, #F4D03F 0%, #16A085 50%, #173f2c 100%)"
                 }}
             >
                 <Nav session={session} />
