@@ -781,6 +781,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/random-gradient@npm:^0.0.2":
+  version: 0.0.2
+  resolution: "@types/random-gradient@npm:0.0.2"
+  checksum: 10c0/703216fa785730ea71d5b1e908afd12a70b2bfd4886b60741a4b04f675164369ea16dcc23a7389fb24e5452643194e898982f0b87521b69cdc70f1527a472591
+  languageName: node
+  linkType: hard
+
 "@types/react-dom@npm:^18.3.0":
   version: 18.3.1
   resolution: "@types/react-dom@npm:18.3.1"
@@ -1441,6 +1448,7 @@ __metadata:
     "@trpc/server": "npm:^11.0.0-rc.446"
     "@types/eslint": "npm:^8.56.10"
     "@types/node": "npm:^20.14.10"
+    "@types/random-gradient": "npm:^0.0.2"
     "@types/react": "npm:^18.3.3"
     "@types/react-dom": "npm:^18.3.0"
     "@typescript-eslint/eslint-plugin": "npm:^8.1.0"
@@ -1455,6 +1463,7 @@ __metadata:
     prettier: "npm:^3.3.2"
     prettier-plugin-tailwindcss: "npm:^0.6.5"
     prisma: "npm:^5.14.0"
+    random-gradient: "npm:^0.0.2"
     react: "npm:^18.3.1"
     react-dom: "npm:^18.3.1"
     server-only: "npm:^0.0.1"
@@ -3928,6 +3937,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"random-gradient@npm:^0.0.2":
+  version: 0.0.2
+  resolution: "random-gradient@npm:0.0.2"
+  dependencies:
+    string-hash: "npm:^1.1.3"
+    tinycolor2: "npm:^1.4.1"
+  checksum: 10c0/211a455b41d30a8fb3c145a6bc0fc59759f6f9571761a8ac21012c0318a61debd4f7398272648d9f3d58aec38f4477a479e0e8948f200b82c5fe19f75c8262c0
+  languageName: node
+  linkType: hard
+
 "react-dom@npm:^18.3.1":
   version: 18.3.1
   resolution: "react-dom@npm:18.3.1"
@@ -4373,6 +4392,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"string-hash@npm:^1.1.3":
+  version: 1.1.3
+  resolution: "string-hash@npm:1.1.3"
+  checksum: 10c0/179725d7706b49fbbc0a4901703a2d8abec244140879afd5a17908497e586a6b07d738f6775450aefd9f8dd729e4a0abd073fbc6fa3bd020b7a1d2369614af88
+  languageName: node
+  linkType: hard
+
 "string-width-cjs@npm:string-width@^4.2.0, string-width@npm:^4.1.0":
   version: 4.2.3
   resolution: "string-width@npm:4.2.3"
@@ -4637,6 +4663,13 @@ __metadata:
   dependencies:
     any-promise: "npm:^1.0.0"
   checksum: 10c0/f375aeb2b05c100a456a30bc3ed07ef03a39cbdefe02e0403fb714b8c7e57eeaad1a2f5c4ecfb9ce554ce3db9c2b024eba144843cd9e344566d9fcee73b04767
+  languageName: node
+  linkType: hard
+
+"tinycolor2@npm:^1.4.1":
+  version: 1.6.0
+  resolution: "tinycolor2@npm:1.6.0"
+  checksum: 10c0/9aa79a36ba2c2a87cb221453465cabacd04b9e35f9694373e846fdc78b1c768110f81e581ea41440106c0f24d9a023891d0887e8075885e790ac40eb0e74a5c1
   languageName: node
   linkType: hard
 
