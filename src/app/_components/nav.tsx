@@ -11,6 +11,8 @@ import {
 
 export function Nav({ session }: { session?: Session | null }) {
     const bgGradient = { background: gradient("testing") };
+    const userName = session?.user?.name ?? session?.user.email?.split("@")[0];
+    const userInitial = userName?.[0];
 
     return (
         <div className="absolute top-0 z-50 flex h-16 w-full items-center justify-end gap-5 p-5">
@@ -21,8 +23,7 @@ export function Nav({ session }: { session?: Session | null }) {
                         style={bgGradient}
                     >
                         <span className="text-xl font-bold text-white">
-                            {session.user?.name?.[0] ??
-                                session.user.email?.split("@")[0]?.[0]}
+                            {userInitial}
                         </span>
                     </button>
                     <Drawer direction="right">
@@ -30,14 +31,18 @@ export function Nav({ session }: { session?: Session | null }) {
                             <Menu size={35} />
                         </DrawerTrigger>
                         <DrawerContent>
-                            <DrawerTitle>Title</DrawerTitle>
-                            Some content goes here
-                            <Link
-                                href={"/api/identity/signout"}
-                                className="font-semibold hover:bg-emerald-500 focus:outline-none focus:ring focus:ring-emerald-500"
-                            >
-                                {"Sign out"}
-                            </Link>
+                            <div className="p-10 flex h-full justify-between flex-col items-start">
+                                <div className="flex flex-col gap-5">
+                                <DrawerTitle>{userName}</DrawerTitle>
+                                Some content goes here
+                                </div>
+                                <Link
+                                    href={"/api/identity/signout"}
+                                    className="font-semibold border-transparent border-b-4 hover:border-emerald-500 focus:outline-none focus:ring focus:ring-emerald-500"
+                                    >
+                                    {"Sign out"}
+                                </Link>
+                            </div>
                         </DrawerContent>
                     </Drawer>
                 </>
