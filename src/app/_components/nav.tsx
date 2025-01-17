@@ -1,7 +1,7 @@
 import type { Session } from "next-auth";
 import Link from "next/link";
 import gradient from "random-gradient";
-import { Menu } from "lucide-react";
+import { LogOut } from "lucide-react";
 import {
     Drawer,
     DrawerContent,
@@ -15,20 +15,19 @@ export function Nav({ session }: { session?: Session | null }) {
     const userInitial = userName?.[0];
 
     return (
-        <div className="absolute top-0 z-50 flex h-16 w-full items-center justify-end gap-5 p-5">
+        <div className="absolute top-0 z-50 flex h-16 w-full items-center justify-end gap-5 p-3">
             {session && (
                 <>
-                    <button
-                        className="flex h-10 w-10 items-center justify-center rounded-full"
-                        style={bgGradient}
-                    >
-                        <span className="text-xl font-bold text-white">
-                            {userInitial}
-                        </span>
-                    </button>
                     <Drawer direction="right">
                         <DrawerTrigger>
-                            <Menu size={35} />
+                            <div
+                                className="flex h-10 w-10 items-center justify-center rounded-full"
+                                style={bgGradient}
+                            >
+                                <span className="text-xl font-bold text-white">
+                                    {userInitial}
+                                </span>
+                            </div>
                         </DrawerTrigger>
                         <DrawerContent>
                             <div className="p-10 flex h-full justify-between flex-col items-start">
@@ -38,9 +37,9 @@ export function Nav({ session }: { session?: Session | null }) {
                                 </div>
                                 <Link
                                     href={"/api/identity/signout"}
-                                    className="font-semibold border-transparent border-b-4 hover:border-emerald-500 focus:outline-none focus:ring focus:ring-emerald-500"
+                                    className="font-semibold hover:text-emerald-500 focus:outline-none focus:ring focus:ring-emerald-500 flex items-center gap-3"
                                     >
-                                    {"Sign out"}
+                                    <LogOut /> Sign out
                                 </Link>
                             </div>
                         </DrawerContent>
