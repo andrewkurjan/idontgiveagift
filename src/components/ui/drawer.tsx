@@ -54,13 +54,16 @@ const DrawerContent = React.forwardRef<
                 className={cn(
                     "fixed z-50 flex h-auto flex-col rounded-tl-[10px] border bg-background",
                     (!direction || direction === "bottom" && "inset-x-0 bottom-0 mt-24 rounded-tr-[10px]"),
-                    direction === "right" && "top-0 right-0 w-screen max-w-96 h-full",
+                    direction === "right" && "top-0 right-0 w-screen max-w-96 h-full flex-row items-center",
                     className,
                 )}
                 {...props}
             >
                 {(!direction || direction === "bottom") &&
                     <div className="mx-auto mt-4 h-2 w-[100px] rounded-full bg-muted" />
+                }
+                {(direction === "right") &&
+                    <div className="ml-4 w-2 h-[100px] rounded-full bg-muted" />
                 }
                 {children}
             </DrawerPrimitive.Content>

@@ -30,10 +30,9 @@ export function Nav({ session }: { session?: Session | null }) {
                             </div>
                         </DrawerTrigger>
                         <DrawerContent>
-                            <div className="p-10 flex h-full justify-between flex-col items-start">
+                            <div className="p-10 flex h-full justify-between flex-col items-start w-full text-black">
                                 <div className="flex flex-col gap-5">
                                 <DrawerTitle>{userName}</DrawerTitle>
-                                Some content goes here
                                 </div>
                                 <Link
                                     href={"/api/identity/signout"}
