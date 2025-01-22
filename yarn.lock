@@ -531,7 +531,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@prisma/client@npm:^5.14.0":
+"@prisma/client@npm:5.22.0":
   version: 5.22.0
   resolution: "@prisma/client@npm:5.22.0"
   peerDependencies:
@@ -1740,7 +1740,7 @@ __metadata:
   resolution: "cs50-final-project@workspace:."
   dependencies:
     "@auth/prisma-adapter": "npm:^2.7.2"
-    "@prisma/client": "npm:^5.14.0"
+    "@prisma/client": "npm:5.22.0"
     "@radix-ui/react-dialog": "npm:^1.1.4"
     "@radix-ui/react-slot": "npm:^1.1.1"
     "@sendgrid/mail": "npm:^8.1.4"
@@ -1767,7 +1767,7 @@ __metadata:
     postcss: "npm:^8.4.39"
     prettier: "npm:^3.3.2"
     prettier-plugin-tailwindcss: "npm:^0.6.5"
-    prisma: "npm:^5.14.0"
+    prisma: "npm:5.22.0"
     random-gradient: "npm:^0.0.2"
     react: "npm:^18.3.1"
     react-dom: "npm:^18.3.1"
@@ -4232,7 +4232,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prisma@npm:^5.14.0":
+"prisma@npm:5.22.0":
   version: 5.22.0
   resolution: "prisma@npm:5.22.0"
   dependencies:
